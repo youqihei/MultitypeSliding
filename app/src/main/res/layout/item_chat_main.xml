@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
     <multitypesliding.privatecom.wwei.multitypesliding.view.SwipeItemDelete
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         >
         <TextView

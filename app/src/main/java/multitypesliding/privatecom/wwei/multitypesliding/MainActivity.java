@@ -9,11 +9,14 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import butterknife.BindView;
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        Test();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
       //  使用瀑布流布局,第一个参数 spanCount 列数,第二个参数 orentation 排列方向
@@ -52,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
     /**
      * 生成一些数据添加到集合中
      */
+    public  void Test()
+    {
+
+    }
 
     private void initData() {
         Beauty beauty;
