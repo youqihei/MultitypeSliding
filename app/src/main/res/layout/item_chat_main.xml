@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <multitypesliding.privatecom.wwei.multitypesliding.view.SwipeItemDelete
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_context"
+            android:text="111111111111111111111111"
+            />
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="#333298"
+                android:text="置顶" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#5694ff"
+                android:gravity="center"
+                android:text="删除" />
+
+        </LinearLayout>
+    </multitypesliding.privatecom.wwei.multitypesliding.view.SwipeItemDelete>
+    <ImageView
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="@color/font_title_gray"
+        />
+</LinearLayout>
