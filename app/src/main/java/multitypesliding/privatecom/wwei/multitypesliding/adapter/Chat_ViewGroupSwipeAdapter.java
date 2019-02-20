@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import java.util.List;
 
@@ -15,31 +14,30 @@ import multitypesliding.privatecom.wwei.multitypesliding.R;
 import multitypesliding.privatecom.wwei.multitypesliding.view.SlideDeleteView;
 
 /**
- * Created by Administrator on 2018/12/4.
+ * Created by Administrator on 2019/1/14.
  */
 
-public class Chat_LinearLayoutAdapter extends RecyclerView.Adapter<Chat_LinearLayoutAdapter.ViewHolder> {
+public class Chat_ViewGroupSwipeAdapter extends RecyclerView.Adapter<Chat_ViewGroupSwipeAdapter.ViewHolder> {
     private Context mContext;
     private List<String> data;
-    private Chat_LinearLayoutAdapter.DeleteAndStick callback;
-    public Chat_LinearLayoutAdapter(List<String> data, Context context, Chat_LinearLayoutAdapter.DeleteAndStick callback) {
+    private Chat_ViewGroupSwipeAdapter.DeleteAndStick callback;
+    public Chat_ViewGroupSwipeAdapter(List<String> data, Context context, Chat_ViewGroupSwipeAdapter.DeleteAndStick callback) {
         this.data = data;
         mContext = context;
         this.callback = callback;
     }
 
     @Override
-    public Chat_LinearLayoutAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
+    public Chat_ViewGroupSwipeAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
     {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_chat_ll_main,parent,false);
-        return new Chat_LinearLayoutAdapter.ViewHolder(view);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_chat_vgroup_main,parent,false);
+        return new Chat_ViewGroupSwipeAdapter.ViewHolder(view);
     }
     @Override
-    public void onBindViewHolder(Chat_LinearLayoutAdapter.ViewHolder viewHolder, final int position)
+    public void onBindViewHolder(Chat_ViewGroupSwipeAdapter.ViewHolder viewHolder, final int position)
     {
-        Log.e("dd222"+position,"ddd");
-        ConstraintLayout layout= (ConstraintLayout) viewHolder.deleteView.getChildAt(0);
-       // TextView deleteView = (TextView) layout.getChildAt(0);
+      //  ConstraintLayout layout= (ConstraintLayout) viewHolder.deleteView.getChildAt(0);
+        // TextView deleteView = (TextView) layout.getChildAt(0);
         //deleteView.setText(data.get(position));
 
 
@@ -63,3 +61,4 @@ public class Chat_LinearLayoutAdapter extends RecyclerView.Adapter<Chat_LinearLa
         public void Delete(int position);
     }
 }
+

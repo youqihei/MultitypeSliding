@@ -60,12 +60,27 @@ public class MainActivity extends AppCompatActivity {
     {
 
     }
+    public void println()
+    {
+
+    }
+
+    public double myPow(double x, int n) {
+         double result = 1.0;
+        for(int i = n; i != 0; i /= 2){
+            if(i % 2 != 0){
+                result *= x;
+            }
+            x *= x;
+        }
+        return  n < 0 ? 1 / result : result;
+    }
 
     private void initData() {
         Beauty beauty;
-            beauty = new Beauty("子布局Item继承FrameLayout方式侧滑",R.color.colorAccent);
+            beauty = new Beauty("利用ViewDragHelper的侧滑",R.color.colorAccent);
             data.add(beauty);
-        beauty = new Beauty("子布局继承LinearLayout方式侧滑",R.color.green);
+        beauty = new Beauty("继承ViewGroup方式的侧滑",R.color.green);
         data.add(beauty);
         beauty = new Beauty("FrameLayout方式侧滑",R.color.yello);
         data.add(beauty);

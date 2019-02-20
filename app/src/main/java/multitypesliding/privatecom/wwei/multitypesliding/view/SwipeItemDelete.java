@@ -21,6 +21,8 @@ public class SwipeItemDelete extends FrameLayout{
     private int contentHeight;
     private int contentWidth;
     private int deleteWidth;
+    private int mScaleTouchSlop;//为了处理单击事件的冲突
+    private int mMaxVelocity;//计算滑动速度用
     private ViewDragHelper viewDragHelper;
     private static boolean isTouching;
     enum State {

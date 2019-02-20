@@ -23,7 +23,7 @@
             android:name=".activity.FrameLayoutSwipeActivity">
         </activity>
         <activity
-            android:name=".activity.LinearLayoutSwipeActivity">
+            android:name=".activity.ViewGroupSwipeActivity">
         </activity>
     </application>
 

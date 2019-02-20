@@ -3,22 +3,17 @@ package multitypesliding.privatecom.wwei.multitypesliding.adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-
 import java.util.List;
 
 import multitypesliding.privatecom.wwei.multitypesliding.R;
 import multitypesliding.privatecom.wwei.multitypesliding.activity.FrameLayoutSwipeActivity;
-import multitypesliding.privatecom.wwei.multitypesliding.activity.LinearLayoutSwipeActivity;
+import multitypesliding.privatecom.wwei.multitypesliding.activity.ViewGroupSwipeActivity;
 import multitypesliding.privatecom.wwei.multitypesliding.bean.Beauty;
 
 /**
@@ -60,7 +55,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
                         mContext.startActivity(intent);
                         break;
                     case 1:
-                        intent = new Intent(mContext, LinearLayoutSwipeActivity.class);
+                        intent = new Intent(mContext, ViewGroupSwipeActivity.class);
                         mContext.startActivity(intent);
                         break;
                 }
